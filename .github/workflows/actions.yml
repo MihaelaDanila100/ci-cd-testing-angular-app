@@ -1,8 +1,9 @@
 name: GitHubActions
 on: push
 jobs:
-  my-job:
+  greet-branch:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/test'
     steps:
-      - name: first-step
-        run: echo "Hello!"
+      - name: Greet branch
+        run: echo "Hello test!"
