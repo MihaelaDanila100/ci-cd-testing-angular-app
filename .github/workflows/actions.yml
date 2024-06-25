@@ -2,7 +2,7 @@ name: GitHubActions
 on: push
 jobs:
   my-job:
-    runs-on: ubuntu-latests
+    runs-on: ubuntu-latest
     steps:
       - name: first-step
         run: echo "Hello!"
