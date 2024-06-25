@@ -1,0 +1,9 @@
+name: Greeting
+on: push
+jobs:
+  greet-branch:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/test'
+    steps:
+      - name: Greet branch
+        run: echo "Hello test!"
